@@ -1,8 +1,7 @@
-
 const { Shop, Item } = require("./gilded_rose");
 
 const items = [
-  new Item("+5 Dexterity Vest", 10, 20),
+  new Item("+5 Dexterity Vest", -1, 20),
   new Item("Aged Brie", 2, 0),
   new Item("Elixir of the Mongoose", 5, 7),
   new Item("Sulfuras, Hand of Ragnaros", 0, 80),
@@ -22,7 +21,9 @@ console.log("OMGHAI!");
 for (let day = 0; day < days + 1; day++) {
   console.log(`-------- day ${day} --------`);
   console.log("name, sellIn, quality");
-  items.forEach(item => console.log(`${item.name}, ${item.sellIn}, ${item.quality}`));
+  items.forEach((item) =>
+    console.log(`${item.name}, ${item.sellIn}, ${item.quality}`)
+  );
   gildedRose.updateQuality();
-  console.log("")
+  console.log("");
 }
