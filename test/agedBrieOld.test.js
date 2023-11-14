@@ -1,4 +1,4 @@
-const { Shop, Item } = require("../src/gilded_rose");
+const { Shop, Item } = require("../src/gilded_rose3");
 
 describe("Queijo Brie envelhecido", function () {
   it("deve aumentar a qualidade em 1 unidade na medida que envelhece", function () {
