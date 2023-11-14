@@ -1,4 +1,4 @@
-const { Shop, Item } = require("../../src/gilded_rose");
+const { Shop, Item } = require("../../src/gilded_rose3");
 
 describe("Qualidade vai para 0", function () {
   it("Quando data tiver passada", function () {
