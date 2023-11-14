@@ -83,14 +83,15 @@ class SulfurasItem extends Item {
 class Shop {
   constructor(items = []) {
     this.items = items.map((item) => {
-      if (item.name === "Aged Brie") {
-        return new AgedBrieItem(item.name, item.sellIn, item.quality);
-      } else if (item.name === "Backstage passes to a TAFKAL80ETC concert") {
-        return new BackstagePassItem(item.name, item.sellIn, item.quality);
-      } else if (item.name === "Sulfuras, Hand of Ragnaros") {
-        return new SulfurasItem(item.name, item.sellIn, item.quality);
-      } else {
-        return new Item(item.name, item.sellIn, item.quality);
+      switch (item.name) {
+        case "Aged Brie":
+          return new AgedBrieItem(item.name, item.sellIn, item.quality);
+        case "Backstage passes to a TAFKAL80ETC concert":
+          return new BackstagePassItem(item.name, item.sellIn, item.quality);
+        case "Sulfuras, Hand of Ragnaros":
+          return new SulfurasItem(item.name, item.sellIn, item.quality);
+        default:
+          return new Item(item.name, item.sellIn, item.quality);
       }
     });
   }
