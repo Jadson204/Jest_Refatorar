@@ -1,10 +1,10 @@
-const { Shop, Item } = require("../src/gilded_rose");
+const { Shop, Item } = require("../../src/gilded_rose");
 
-describe("Data de Vencimento", function () {
-  it("deveria diminuir a qualidade em 2 quando a data de venda ja passou", function () {
-    const name = "Item Exemplo";
-    const sellInInitial = 0; // A data de validade é hoje
-    const qualityInitial = 10;
+describe("Diminuir Qualidade", function () {
+  it("deveria diminuir a qualidade o dobro quando a data de venda diminui", function () {
+    const name = "Conjured";
+    const sellInInitial = 22;
+    const qualityInitial = 13;
 
     const gildedRose = new Shop([
       new Item(name, sellInInitial, qualityInitial),
