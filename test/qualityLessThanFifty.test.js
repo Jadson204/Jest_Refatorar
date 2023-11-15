@@ -1,4 +1,4 @@
-const { Shop, Item } = require("../src/gilded_rose3");
+const { Shop, Item } = require("../src/gilded_rose");
 
 describe("Qualidade ate 50", function () {
   it("nao deve permitir que a qualidade exceda 50", function () {

@@ -1,4 +1,4 @@
-const { Shop, Item } = require("../src/gilded_rose3");
+const { Shop, Item } = require("../src/gilded_rose");
 
 describe("Qualidade nao negativa", function () {
   it("nao deve permitir que a qualidade seja negativa", function () {
