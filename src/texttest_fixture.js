@@ -1,4 +1,4 @@
-const { Shop, Item } = require("./gilded_rose2");
+const { Shop, Item } = require("./gilded_rose");
 
 const items = [
   new Item("+5 Dexterity Vest", -1, 20),
