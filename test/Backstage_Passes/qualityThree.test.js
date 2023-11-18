@@ -1,4 +1,5 @@
-const { Shop, Item } = require("../../src/gilded_rose");
+const Item = require("../../src/Item");
+const Shop = require("../../src/Item/Shop");
 
 describe("Qualidade aumenta em 3", function () {
   it("Quando data venda <= 5", function () {
