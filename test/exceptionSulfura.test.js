@@ -1,4 +1,5 @@
-const { Shop, Item } = require("../src/gilded_rose");
+const Item = require("../src/Item");
+const Shop = require("../src/Item/Shop");
 
 describe("Sulfuras", function () {
   it("nao deve ter sua qualidade diminuida ou seu numero de dias diminuido", function () {

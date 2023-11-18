@@ -1,4 +1,5 @@
-const { Shop, Item } = require("../src/gilded_rose");
+const Item = require("../src/Item");
+const Shop = require("../src/Item/Shop");
 
 describe("Data de Vencimento", function () {
   it("deveria diminuir a qualidade em 2 quando a data de venda ja passou", function () {
